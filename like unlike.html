@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<form name = "myform">
+<input type = "button" name = "button1" id = "button1" value = "like" style="background-color:blue; padding: 50px 50px;font-size: 40px;   
+    cursor: pointer;"  onclick = "change()">
+</form>
+
+<script type = "text/javascript">
+
+function change() {
+if (document.myform.button1.value == "like") {
+document.myform.button1.value="unlike";
+document.myform.button1.style="background-color:red;padding: 50px 50px;font-size: 40px;cursor: pointer;"
+
+}
+else {
+document.myform.button1.value = "like";
+document.myform.button1.style="background-color:blue;padding: 50px 50px;font-size: 40px;cursor: pointer;";
+
+}
+}
+</script>
+</center>
+</body>
+</html>
